@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(109, 109, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -2px;
+    width: 100%;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li:hover {
+    background-color: rgb(22, 22, 26);
+}
+
+li a {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+button {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+button a {
+    color: black;
+    font-weight: bold;
+    font-size: 17;
+}
+div button:hover{
+    background-color:rgb(22, 22, 26);
+}
+div button a{
+    color: white;
+}
+.product-container {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product-box {
+    border: 2px solid rgb(113, 113, 236);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.product-box h3 {
+    margin: 10px 0;
+}
+.product-box p {
+    margin: 5px 0;
+}
+.product-box button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+.product-box button a {
+    color: white;
+    text-decoration: none;
+}
+#message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+}
