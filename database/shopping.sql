@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 25, 2024 at 01:11 PM
+-- Generation Time: Jul 30, 2024 at 11:52 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -100,55 +100,6 @@ INSERT INTO `item` (`Product_id`, `Product_Name`, `Product_Picture`, `Product_Pr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `logs`
---
-
-CREATE TABLE `logs` (
-  `log_Id` int(10) NOT NULL,
-  `User_Id` int(10) NOT NULL,
-  `action` varchar(50) NOT NULL,
-  `timestamp` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `logs`
---
-
-INSERT INTO `logs` (`log_Id`, `User_Id`, `action`, `timestamp`) VALUES
-(1, 51, 'login', '2024-06-26'),
-(2, 51, 'logout', '2024-06-26'),
-(3, 43, 'login', '2024-06-26'),
-(4, 43, 'login', '2024-06-27'),
-(5, 43, 'logout', '2024-06-27'),
-(6, 43, 'login', '2024-06-27'),
-(7, 43, 'logout', '2024-06-27'),
-(8, 55, 'login', '2024-06-27'),
-(9, 55, 'logout', '2024-06-27'),
-(10, 43, 'login', '2024-06-27'),
-(11, 43, 'logout', '2024-06-27'),
-(12, 55, 'login', '2024-06-27'),
-(13, 55, 'logout', '2024-06-27'),
-(14, 56, 'login', '2024-06-27'),
-(15, 56, 'logout', '2024-06-27'),
-(16, 43, 'login', '2024-06-27'),
-(17, 43, 'logout', '2024-06-27'),
-(18, 55, 'login', '2024-06-27'),
-(19, 55, 'logout', '2024-06-27'),
-(20, 43, 'login', '2024-06-27'),
-(21, 57, 'login', '2024-06-29'),
-(22, 57, 'logout', '2024-06-29'),
-(23, 43, 'login', '2024-06-29'),
-(24, 43, 'logout', '2024-06-29'),
-(25, 43, 'login', '2024-06-29'),
-(26, 43, 'logout', '2024-06-29'),
-(27, 43, 'login', '2024-06-29'),
-(28, 43, 'logout', '2024-06-29'),
-(29, 58, 'login', '2024-06-29'),
-(30, 58, 'logout', '2024-06-29');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -169,10 +120,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`No`, `firstName`, `lastName`, `email`, `password`, `phone`, `privilege`, `secret`, `Created`) VALUES
-(43, 'GODFREY', 'KIKOMA', 'godfrey@gmail.com', '$2y$10$khR6H3zkckKx8PjEtunfou0QWKtTci/aaCY1kZHYTekmJu3YBaDVa', 782345480, 'super', 'SQ52BEXFPMT3ULQY', '2024-05-25'),
-(55, 'ERIC', 'KIKO', 'eric@gmail.com', '$2y$10$57DHMVSXxm4kmcefL3wqkeRf8dgPCH5/B9cQH6V/MFuDcA/1wIBtG', 787230434, 'normal', '7OKUYJ34M3ZK7A4Q', '2024-06-27'),
-(56, 'fulgens', 'charles', 'fulgens@gmail.com', '$2y$10$lkhaIkGiBz5WNjJwitciZukko4VvG5BKQGx3lO1wPb4l4IWXLZBuu', 787232323, 'normal', 'TKMPJ2H6DDN36OHA', '2024-06-27'),
-(58, 'GERALD', 'KIKO', 'gela@gmail.com', '$2y$10$Alc/3gc62F4mvVxHh6bMReEG4j759WtWFIHaDmuk4wwgudYY9bmtm', 787230480, 'normal', 'BMLOTD6R7JVMXCOO', '2024-06-29');
+(59, 'GODFREY', 'KIKO', 'godfrey@gmail.com', '$2y$10$PkpA8Xjvw7M1N2i1fufYJ.i.91lktyxyNeWaqKttzm0E5eh7gd2zy', 787234512, 'super', 'UPDZ5W5NCJMZWKXI', '2024-07-30');
 
 --
 -- Indexes for dumped tables
@@ -183,12 +131,6 @@ INSERT INTO `users` (`No`, `firstName`, `lastName`, `email`, `password`, `phone`
 --
 ALTER TABLE `item`
   ADD PRIMARY KEY (`Product_id`);
-
---
--- Indexes for table `logs`
---
-ALTER TABLE `logs`
-  ADD PRIMARY KEY (`log_Id`);
 
 --
 -- Indexes for table `users`
@@ -207,16 +149,10 @@ ALTER TABLE `item`
   MODIFY `Product_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT for table `logs`
---
-ALTER TABLE `logs`
-  MODIFY `log_Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
-
---
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `No` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `No` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
